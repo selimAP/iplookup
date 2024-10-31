@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: "Source Code Pro", monospace;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(9, 255, 0);
+    padding: 0px 100px;
+    line-height: 1.6;
+}
+
+#ipv4{
+    font-size: 1.5rem;
+}
+#ipv6{
+    font-size: 1.2rem;
+}
+
+.credits{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 508px){
+    #ipv4{
+        font-size: 1.2rem;
+    }
+    #ipv6{
+        font-size: 1rem;
+    }
+    .main-container{
+        padding: 0px 20px;
+    }
+}
