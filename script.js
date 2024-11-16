@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getLocationData = async (ip) => {
         try {
-            const response = await fetch(`http://ip-api.com/json/${ip}`);
+            const response = await fetch(`https://ip-api.com/json/${ip}`);
             if (!response.ok) throw new Error('Error fetching location data');
             const data = await response.json();
             const location = `${data.city || 'Not available'}, ${data.country || 'Not available'}`;
